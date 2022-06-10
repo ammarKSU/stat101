@@ -135,7 +135,7 @@ def main():
             n = len(data)
             mean = sum(data) / n
             deviations = [(x - mean) ** 2 for x in data]
-            variance = sum(deviations) / n
+            variance = sum(deviations) / (n-1)
             return variance
         def ch1_stdev(data):
             import math
